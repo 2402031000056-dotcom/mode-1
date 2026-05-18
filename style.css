@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#07130f;
+    color:white;
+}
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar{
+    background:linear-gradient(to right,#111827,#1f2937,#2e1065);
+    padding:15px 0;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.logo-text{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff4fd8 !important;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ff4fd8 !important;
+}
+
+.custom-btn{
+    background:linear-gradient(45deg,#ff4fd8,#7c3aed,#14532d);
+    border:none;
+    color:white;
+    padding:10px 22px;
+    border-radius:40px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.custom-btn:hover{
+    transform:scale(1.05);
+    color:white;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:65px;
+    font-weight:bold;
+    background:linear-gradient(to right,#ff4fd8,#ffffff,#00ffae);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:20px;
+    color:#ddd;
+}
+
+/* ================= SECTION ================= */
+
+.section-padding{
+    padding:80px 0;
+}
+
+/* ================= CARDS ================= */
+
+.course-card{
+    background:#111827;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(255,79,216,0.3);
+}
+
+.course-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.course-content{
+    padding:20px;
+}
+
+.course-content h4{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#00ffae;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* ================= FORM ================= */
+
+.form-box{
+    background:#111827;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.form-control{
+    background:#1f2937 !important;
+    border:none !important;
+    color:white !important;
+    padding:14px;
+}
+
+.form-control::placeholder{
+    color:#ccc;
+}
+
+textarea{
+    resize:none;
+}
+
+/* ================= FOOTER ================= */
+
+.footer-section{
+    background:linear-gradient(to right,#111827,#0f172a,#052e16);
+    padding:70px 0 20px;
+    margin-top:80px;
+}
+
+.footer-logo{
+    color:#ff4fd8;
+}
+
+.footer-links{
+    list-style:none;
+    padding-left:0;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#00ffae;
+}
+
+.copyright-text{
+    margin-top:20px;
+    color:#aaa;
+}
+
+/* ================= BUTTON ================= */
+
+.main-btn{
+    background:linear-gradient(45deg,#ff4fd8,#7c3aed,#00ffae);
+    border:none;
+    color:white;
+    padding:12px 28px;
+    border-radius:40px;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.main-btn:hover{
+    transform:scale(1.05);
+    color:white;
+}
+
+/* ================= FAQ ================= */
+
+.accordion-item{
+    background:#111827 !important;
+    border:none !important;
+    margin-bottom:15px;
+    border-radius:12px !important;
+    overflow:hidden;
+}
+
+.accordion-button{
+    background:#1f2937 !important;
+    color:white !important;
+}
+
+.accordion-body{
+    background:#0f172a;
+    color:#ddd;
+}
+
+/* ================= CART ================= */
+
+.cart-box{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+}
+
+.qty-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.qty-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#ff4fd8;
+    color:white;
+    font-size:20px;
+}
+
+/* ================= TOP BUTTON ================= */
+
+#topBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(45deg,#ff4fd8,#00ffae);
+    color:white;
+    font-size:22px;
+    display:none;
+    z-index:999;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+}
